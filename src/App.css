@@ -8,7 +8,10 @@
     font-family: 'Lobster', cursive;
 }
 #Projects{
-    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+#typing{
+    font-family: "Lobster",cursive;
 }
 .name{
     font-family: 'Oswald', sans-serif;
@@ -30,4 +33,71 @@ li{
 }
 .lbtn{
     font-family: 'Oswald', sans-serif;
+}
+/*.bbody{
+    background-color:#FFCC00;
+}*/
+.pN{
+    font-family: 'Oswald', sans-serif;
+}
+.meraNam{
+    font-family: "Dancing Script", cursive;
+}
+
+.slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 80vw; /* Use viewport width for responsive width */
+    height: 80vw; /* Use viewport width for responsive height */
+    max-width: 450px; /* Set a maximum width to avoid excessive stretching */
+    max-height: 450px; /* Set a maximum height to avoid excessive stretching */
+    background: #D20062;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+    transform: translate(-50%, -50%); /* Center the element */
+}
+
+@keyframes sliderShape {
+    0%, 100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    34% {
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+}
+
+/* Hide the animation on mobile devices */
+@media (max-width: 768px) {
+    .slider-thumb::before {
+        display: none;
+    }
+}
+
+html::-webkit-scrollbar {
+    width: 10px; 
+ }
+
+html::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #F6F5F2;
+  border-radius: 50px;
+  height: 1rem;
 }
