@@ -9,9 +9,9 @@ function App() {
     deleteSpeed: 100,
   });
   return (
-    <h1 className="text-4xl" >
-      i <span className="font-extrabold text-teal-300" id="typing">{text}</span>
-      <span className="text-red-700">
+    <h1 className="text-4xl text-black" >
+      i <span className="font-extrabold text-tt" id="typing">{text}</span>
+      <span className="text-amber-900">
         <Cursor />
       </span>
     </h1>
